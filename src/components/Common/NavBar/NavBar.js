@@ -20,16 +20,16 @@ export default function NavBar() {
         >
           <NavItem
             className={"hidden md:block"}
-            link={"challenges"}
+            link={"/challenges"}
             text={"Challenges"}
           />
           <NavItem
             className={"hidden md:block"}
-            link={"projects"}
+            link={"/projects"}
             text={"Projects"}
           />
           <IconBtn className={"hidden md:block"} />
-          <NavBtn text={"Login"} />
+          <NavBtn text={"Login"} link={"/accounts/login"}/>
           <p
             className="ml-8 md:hidden"
             onClick={() => {
