@@ -32,10 +32,7 @@ export default function NavBar() {
           <NavBtn text={"Login"} link={"/accounts/login"}/>
           <p
             className="ml-8 md:hidden"
-            onClick={() => {
-              console.log("Open");
-              setShowMobileSidebar(true);
-            }}
+            onClick={() => setShowMobileSidebar(true)}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -61,11 +58,7 @@ export default function NavBar() {
       >
         <span
           className="absolute cursor-pointer right-4 top-2"
-          onClick={() => {
-            console.log("Close");
-            console.log(showMobileSidebar);
-            setShowMobileSidebar((prevState) => !prevState);
-          }}
+          onClick={() => setShowMobileSidebar((prevState) => !prevState)}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
