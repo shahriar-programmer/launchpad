@@ -54,17 +54,17 @@ export default function NavBar() {
           </p>
         </div>
       </Container>
-      {/* <div
-        className={`transition-all w-2/4 duration-300 fixed top-0 right-0 overflow-hidden ${
+      <div
+        className={`transition-all w-2/4 fixed top-0 overflow-hidden bg-white z-30 ${
           showMobileSidebar ? "right-0" : "-right-full"
-        } h-screen bg-white border p-4 md:hidden`}
+        } h-screen p-4 md:hidden`}
       >
         <span
           className="absolute cursor-pointer right-4 top-2"
           onClick={() => {
             console.log("Close");
             console.log(showMobileSidebar);
-            setShowMobileSidebar(false);
+            setShowMobileSidebar((prevState) => !prevState);
           }}
         >
           <svg
@@ -94,7 +94,7 @@ export default function NavBar() {
             text={"Projects"}
           />
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }
