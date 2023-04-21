@@ -15,13 +15,12 @@ export default function SingleFeature({
     >
       <div className="flex items-center justify-between header">
         <h3 className="text-3xl font-extralight">{title}</h3>
-        {/* <p>{icon}</p> */}
         {children}
       </div>
       <p className={`text-xl font-semibold text-${color} command`}>{command}</p>
       <ul className="pl-8 text-gray-500 list-disc features">
-        {features.map((feat) => (
-          <li>{feat}</li>
+        {features.map((feat, index) => (
+          <li key={index}>{feat}</li>
         ))}
       </ul>
       <div className="flex items-center justify-end font-semibold uppercase gap-x-2 cta">

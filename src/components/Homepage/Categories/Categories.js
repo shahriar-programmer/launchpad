@@ -73,7 +73,7 @@ export default function Categories() {
             </div>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-5 justify-items-center">
               {categoryList.map(({ title, icon }) => (
-                <SingleCategory title={title} icon={icon} />
+                <SingleCategory key={title} title={title} icon={icon} />
               ))}
             </div>
           </div>

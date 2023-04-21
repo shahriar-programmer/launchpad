@@ -10,6 +10,7 @@ export default function ProjectList() {
       >
         {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((prj) => (
           <SingleProject
+            key={prj}
             title={"Cyber Surfers"}
             category={"Cybersecurity"}
             tag={"STEM"}

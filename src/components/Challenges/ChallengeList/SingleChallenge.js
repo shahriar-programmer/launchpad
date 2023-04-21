@@ -18,6 +18,7 @@ export default function SingleChallenge({
           width="840"
           height="200"
           className="relative top-0 w-full h-full"
+          alt="Challenge"
         />
         <div className="absolute bottom-0 left-0 z-20 flex flex-col justify-end w-full h-full p-4 text-white bg-black/40">
           <p className="text-3xl">{title}</p>

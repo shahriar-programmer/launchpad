@@ -17,6 +17,7 @@ export default function ImpactSection() {
             width="40"
             height="40"
             className="absolute top-16 left-16"
+            alt="Impact"
           />
           <p className="mt-6 ml-10 text-2xl text-white">
             It was an amazing experience, collaborating with other learners from
@@ -27,6 +28,7 @@ export default function ImpactSection() {
             width="40"
             height="40"
             className="absolute rotate-180 bottom-16 right-16"
+            alt="Quote Image"
           />
         </SingleImpact>
         <SingleImpact className={"bg-blue-900 flex flex-col text-white"}>
@@ -45,7 +47,12 @@ export default function ImpactSection() {
         >
           <div className="flex items-end justify-center gap-x-4">
             <div>
-              <Image src={rocketImage} width="100" height="100" />
+              <Image
+                src={rocketImage}
+                width="100"
+                height="100"
+                alt="Rocket Image"
+              />
             </div>
             <div className="flex flex-col items-center justify-center lg:mt-6 gap-y-4">
               <p className="font-sans text-3xl font-black tracking-tighter lg:text-8xl">

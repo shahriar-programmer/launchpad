@@ -54,6 +54,7 @@ export default function Features() {
       <Container className={"grid grid-cols-1 lg:grid-cols-3 gap-y-12 gap-x-6"}>
         {data.map(({ title, command, features, cta, color, icon }) => (
           <SingleFeature
+            key={title}
             title={title}
             command={command}
             features={features}
